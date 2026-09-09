@@ -1,6 +1,6 @@
 # NizeCloud Admin Console
 
-The NizeCloud Admin Console is the administrative interface for managing the NizeCloud platform.
+Administrative control plane for NizeCloud.
 
 ## Responsibilities
 
@@ -9,7 +9,7 @@ The NizeCloud Admin Console is the administrative interface for managing the Niz
 - Projects
 - Users
 - Identity and SSO
-- Permissions
+- Roles and permissions
 - Compute
 - Storage
 - Databases
@@ -26,17 +26,18 @@ The NizeCloud Admin Console is the administrative interface for managing the Niz
 
 The console is a frontend application.
 
-It must not contain backend service implementations.
+It communicates with NizeCloud backend services through platform APIs.
 
-The console will communicate with NizeCloud APIs through defined API clients.
-
-Future integration:
+The console must not contain backend service implementations.
 
 Console
-  |
-  v
+    |
+    v
 NizeCloud API Gateway
-  |
-  +--> Platform Services
-  |
-  +--> Mdano Gateway
+    |
+    +---- Platform Services
+    |
+    +---- Mdano Gateway
+              |
+              v
+            Mdano

@@ -1,5 +1,5 @@
 # networking
 
-This route is part of the NizeCloud Admin Console.
+NizeCloud Admin Console route.
 
-Implementation will be added during the engineering phase.
+Implementation will be introduced during the engineering phase.

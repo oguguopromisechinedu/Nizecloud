@@ -1,0 +1,3 @@
+# Cache
+
+Managed caching capabilities.

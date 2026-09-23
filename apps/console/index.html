@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NizeCloud Console</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand"><div class="brand-mark">☁</div><div><strong>NizeCloud</strong><span>Console v2.4.1</span></div></div>
+        <div class="nav-group"><p>INFRASTRUCTURE</p><a href="#overview">▦ <span>Overview</span></a><a href="#instances">▣ <span>Instances</span><b>8</b></a><a href="#databases">▤ <span>Databases</span><b>5</b></a><a href="#storage">▱ <span>Storage</span></a><a href="#networking">◎ <span>Networking</span></a><a href="#security">◈ <span>Security</span></a><a href="#monitoring">⌁ <span>Monitoring</span></a></div>
+        <div class="nav-group management"><p>MANAGEMENT</p><a href="#console">›_ <span>Console</span></a><a href="#billing">▣ <span>Billing</span></a><a class="active" href="#settings">⚙ <span>Settings</span></a></div>
+        <div class="region"><i></i><div><strong>us-east-1</strong><span>N. Virginia · Default</span></div></div>
+        <div class="profile"><div class="avatar">AK</div><div><strong>Aiden Kowalski</strong><span>Admin · Pro Plan</span></div><button aria-label="Profile menu">⌄</button></div>
+      </aside>
+      <main class="main">
+        <header class="topbar"><div class="crumb">Dashboard <span>›</span> <strong>Settings</strong></div><div class="top-actions"><label class="search">⌕<input aria-label="Search" placeholder="Search instances, IPs, regions..." /></label><button class="icon-btn" aria-label="Notifications">♧<i></i></button><button class="select"><i></i> us-east-1⌄</button><button class="refresh">⟳ &nbsp;Refresh</button></div></header>
+        <section class="content"><div class="page-heading"><div><h1>Settings</h1><p>Account, infrastructure, and notification preferences</p></div><button class="save" id="save">▣ &nbsp;Save Changes</button></div>
+          <nav class="settings-tabs" aria-label="Settings sections"><button class="selected" data-tab="General">⚙ <span>General</span></button><button data-tab="Profile">♙ <span>Profile</span></button><button data-tab="Notifications">♧ <span>Notifications</span></button><button data-tab="API Keys">⚿ <span>API Keys</span></button><button data-tab="Security">◈ <span>Security</span></button><button data-tab="Regions">◎ <span>Regions</span></button><button data-tab="Limits">⚙ <span>Limits</span></button></nav>
+          <div class="panel" id="panel"><h2>General Settings</h2><div class="form-row"><label>Organization Name</label><input value="NizeCorp" /></div><div class="form-row"><label>Account ID</label><div class="mono">acc-0fa9b3c2d1</div></div><div class="form-row"><label>Default Region</label><select><option>us-east-1 · N. Virginia</option><option>eu-west-1 · Ireland</option></select></div><div class="form-row toggle-row"><div><label>Usage Alerts</label><span>Receive notifications when usage reaches configured limits</span></div><button class="toggle on" aria-label="Toggle usage alerts"><i></i></button></div></div>
+        </section>
+      </main>
+    </div><div class="toast" role="status" aria-live="polite">Changes saved successfully</div><script src="./app.js"></script>
+  </body>
+</html>
